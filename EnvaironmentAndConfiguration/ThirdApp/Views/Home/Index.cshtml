@@ -1,0 +1,34 @@
+﻿@model Google
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>@Model.ClientId</h1>
+<h1>@Model.ClientSecret</h1>
+@* <div>
+    <h3>Content Root Path : @ViewBag.ContentRootPath </h3>
+    <h3>Web Root Path : @ViewBag.WebRootPath</h3>
+    <h3>Environment Name : @ViewBag.Env_Name</h3>
+</div>
+
+<hr />
+
+<environment include="Production,Staging">
+    <button>Production and Staging</button>
+</environment>
+
+
+<environment include="Staging">
+    <button>Staging</button>
+</environment>
+
+<environment include="Development">
+    <button>Development</button>
+</environment> 
+*@
+
+
+@* 
+<h1>My Key @ViewBag.MyKey</h1> *@
+@* <h1>@ViewBag.ClientId</h1>
+<h1>@ViewBag.ClientSecret</h1> *@

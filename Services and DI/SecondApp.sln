@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIExample", "SecondApp\DIExample.csproj", "{78B8ECEB-7E78-4EA9-B01D-D671B76DB2AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{EF7A5F59-08A4-43AC-B4C2-57875B45F420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{B8069DB4-A1DE-4F2C-9D6E-9D87DA187C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B8ECEB-7E78-4EA9-B01D-D671B76DB2AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B8ECEB-7E78-4EA9-B01D-D671B76DB2AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B8ECEB-7E78-4EA9-B01D-D671B76DB2AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B8ECEB-7E78-4EA9-B01D-D671B76DB2AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF7A5F59-08A4-43AC-B4C2-57875B45F420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF7A5F59-08A4-43AC-B4C2-57875B45F420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF7A5F59-08A4-43AC-B4C2-57875B45F420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF7A5F59-08A4-43AC-B4C2-57875B45F420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8069DB4-A1DE-4F2C-9D6E-9D87DA187C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8069DB4-A1DE-4F2C-9D6E-9D87DA187C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8069DB4-A1DE-4F2C-9D6E-9D87DA187C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8069DB4-A1DE-4F2C-9D6E-9D87DA187C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F5DAE6-F301-46DE-890D-A5EA113ACE80}
+	EndGlobalSection
+EndGlobal

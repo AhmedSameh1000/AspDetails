@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DIExample/1.0.0": {
+        "dependencies": {
+          "Services": "1.0.0"
+        },
+        "runtime": {
+          "DIExample.dll": {}
+        }
+      },
+      "Interfaces/1.0.0": {
+        "runtime": {
+          "Interfaces.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "dependencies": {
+          "Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DIExample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

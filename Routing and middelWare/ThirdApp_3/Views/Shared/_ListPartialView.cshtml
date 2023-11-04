@@ -1,0 +1,12 @@
+﻿<div class="list-container">
+    <h3>@Model.ListTitle</h3>
+    <ul class="list">
+        @if (Model.ListItems !=null)
+        {
+            foreach (var item in Model.ListItems)
+            {
+                <li>@item</li>
+            }
+        }
+    </ul>
+</div>

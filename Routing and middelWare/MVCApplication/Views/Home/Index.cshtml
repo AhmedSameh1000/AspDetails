@@ -1,0 +1,87 @@
+﻿@model PersonProductRapper
+@{ 
+    var Title = ViewBag.appTitle;
+    var jsAlert = $"<script>alert('Person has{Model.Person.Hobbies.Count()} Hobbies')</script>";
+    var PersonData = $"<h1>{Model.Person.Name}</h1>";
+}
+@{
+    // local Function
+    double? GetAge(DateTime? dateTime)
+    {
+        if (dateTime.HasValue)
+        {
+            return DateTime.Now.Year - Model.Person.DateOfBirth.Value.Year;
+        }
+        else
+        {
+            return null;
+        }
+    }
+}
+<html>
+<head>
+    <title>@Title</title>
+    <meta charset="utf-s8" />
+</head>
+<body>
+    @Html.Raw(jsAlert)
+    @Html.Raw(PersonData)
+    @switch (Model.Person.Language)
+    {
+        case Languge.English:
+            <h1>Hello @Model.Person.Name</h1>
+            break;    
+            case Languge.Frensh:
+            <h1>Bievenue @Model.Person.Name</h1>
+            break;     
+            case Languge.Arabic:
+            <h1 dir="rtl">مرحبا @Model.Person.Name</h1>
+            break;
+        default:
+            <h1>Hello @Model.Person.Name</h1>
+            break;
+    }
+
+    @if (Model.Person.DateOfBirth.HasValue)
+    {
+        <h2>your age is @(GetAge(Model.Person.DateOfBirth))</h2>
+    }
+    else
+    {
+        <h2>your age is Unknown</h2>
+    }
+
+    @if (Model.Person.Hobbies.Count() > 0)
+    {
+        <h3>Hobbies</h3>
+        <ul>
+           @* 
+            @for (int i = 0; i < Person.Hobbies.Count(); i++)
+            {
+                <li>@Person.Hobbies[i]</li>
+            } 
+            *@
+
+            @foreach (var Hobby in Model.Person.Hobbies)
+            {
+                <li>@Hobby</li>
+            }
+        </ul>
+    }
+    <hr />
+    @if (Model.Products.Count() > 0)
+    {
+        <h3>Products</h3>
+        <ul>
+
+            @foreach (var Product in Model.Products)
+            {
+              <div style="display:flex; text-decoration:none;list-style:none" >
+                <li>@Product.Id</li>
+                <li>@Product.Name</li>
+              </div>
+            }
+        </ul>
+    }
+</body>
+</html>

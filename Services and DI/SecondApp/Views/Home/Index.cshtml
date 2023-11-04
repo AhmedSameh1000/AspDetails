@@ -1,0 +1,42 @@
+﻿@using Interfaces;
+@inject IProductService ProductService;  
+@{
+    ViewData["Title"] = "Home Page";
+}
+@* 
+<h2>Products</h2>
+<ul class="list-group w-50">
+    @foreach (var Product in Model)
+    {
+        <li class="list-group-item">@Product</li>
+    }
+
+</ul> *@
+<h1>@ProductService.Id</h1>
+
+<form>
+    <button asp-action="Index" class="btn btn-primary">Click</button>
+</form>
+
+<h1>@ViewBag.Obj1EqualObj2</h1>
+<h1>@ViewBag.Obj2EqualObj3</h1>
+<hr />
+<hr />
+<hr />
+<h1>@ViewBag.IdIns1</h1>
+<h1>@ViewBag.IdIns2</h1>
+<h1>@ViewBag.IdIns3</h1>
+<hr />
+<hr />
+<hr />
+<hr />
+<div class="m-2 p-2 border border-5">
+    <h1>@ViewBag.InstanseId_PS_1</h1>
+    <h1>@ViewBag.InstanseId_PS_2</h1>
+    <h1>@ViewBag.InstanseId_PS_3</h1>
+
+    <div class="border border-5 border-dark">
+        <h1>@ViewBag.psChild1</h1>
+        <h1>@ViewBag.psChild2</h1>
+    </div>
+</div>

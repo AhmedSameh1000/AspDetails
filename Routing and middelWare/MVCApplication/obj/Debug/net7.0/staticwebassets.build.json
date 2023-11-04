@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "Uhih+p22qQAlxWqMbzDEpVTeK4q7m5rttemMh49HChs=",
+  "Source": "SecondApp_2",
+  "BasePath": "_content/SecondApp_2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SecondApp_2\\wwwroot",
+      "Source": "SecondApp_2",
+      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Asp_Project\\FirstApp\\MVCApplication\\wwwroot\\",
+      "BasePath": "_content/SecondApp_2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
